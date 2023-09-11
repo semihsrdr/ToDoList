@@ -1,0 +1,118 @@
+h1{
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bba282; /* Header arka plan rengi */
+    color: white; /* Header metin rengi */
+    padding: 30px; /* Header içeriği ile arka plan arasındaki boşluk */
+
+}
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bba282; /* Footer arka plan rengi */
+    color: #fff; /* Footer metin rengi */
+    padding: 10px; /* Footer içeriği ile arka plan arasındaki boşluk */
+}
+/* Formun arka plan rengi ve kenarlığı */
+main{
+    margin-top: 7%;
+}
+form {
+    background-color: #96B6C5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px; /* Formun maksimum genişliği */
+    margin: 0 auto; /* Formu yatayda ortalar */
+}
+
+/* Girdi alanlarının stillemesi */
+input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Gönder düğmesinin stillemesi */
+button[type="submit"] {
+    margin-top: 10px;
+    background-color: #025b81;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #098ec7; /* Düğme üzerine gelindiğinde rengi değiştirir */
+}
+
+#list{
+    padding: 50px;
+    width: 100vh;
+    margin-left: 50px;
+    
+}   
+.toggle-checkbox {
+    margin-right: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+li{
+    font-size: 2rem;
+    color: #474747;;
+}
+body{
+    background-color: #F8F0E5;
+}
+.toggle-checkbox {
+    margin-right: 10px;
+    -webkit-appearance: none; /* Webkit tabanlı tarayıcılardaki varsayılan stillemeyi kaldırır */
+    -moz-appearance: none; /* Firefox'taki varsayılan stillemeyi kaldırır */
+    appearance: none; /* Tarayıcıların varsayılan stilini kaldırır */
+    width: 26px;
+    height: 24px;
+    border: 2px solid #3498db; /* Mavi renkli bir çerçeve ekler */
+    border-radius: 3px;
+    outline: none; /* Odaklandığında varsayılan vurguyu kaldırır */
+    cursor: pointer;
+    position: relative;
+    
+}
+
+/* Tik işareti için stillemeler */
+.toggle-checkbox:checked::before {
+    content: "\2713"; /* Unicode kodu ile bir tik işareti ekler */
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    font-size: 12px;
+    color: #00790a; /* Tik işareti rengi (Yeşil) */
+    
+}
+
+/* Tik işareti durumu değiştiğinde çerçeve rengini değiştirme */
+.toggle-checkbox:checked {
+    border-color: #27ae60; /* Tik işareti seçiliyken çerçeve rengini yeşile değiştirir */
+    text-decoration: line-through; /* Tik işareti seçili olduğunda metni çizer */
+
+}
+
+

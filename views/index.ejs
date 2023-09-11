@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Create Your To-Do List And Follow Your Tasks</h1>
+    </header>
+
+    <main>
+        <form id="todo-form" action="/submit" method="POST">
+            <input type="text" name="todo" id="todo" placeholder="Add a new task" required>
+            <button type="submit">Add</button>
+        </form>
+        <section name="list" id="list">
+            <ul id="todo-list">
+                <!-- Tasks will show in here -->
+    
+                <% if (locals.toDoList){%>
+                    <% for (let i = 0; i < toDoList.length; i++) { %>
+                        <li> <input type="checkbox" class="toggle-checkbox"> <%= toDoList[i] %></li>
+                        <hr>
+                        <% } %>
+                <% } else{ %>
+    
+                <% }%>
+                
+    
+            </ul>
+        </section>
+            
+        
+        
+
+    </main>
+
+
+    <footer>
+        <p>Copyright © Semihsrdr <%= new Date().getFullYear() %> </p>
+    </footer>
+
+</body>
+</html>
